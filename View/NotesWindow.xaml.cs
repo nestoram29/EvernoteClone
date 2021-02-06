@@ -24,9 +24,10 @@ namespace EvernoteClone.View {
         public NotesWindow() {
             InitializeComponent();
             viewModel = Resources["vm"] as NotesVM;
+            
             viewModel.SelectedNoteChanged += ViewModel_SelectedNoteChanged;
-            fontFamilyCB.ItemsSource = Fonts.SystemFontFamilies.OrderBy(f => f.Source);
 
+            fontFamilyCB.ItemsSource = Fonts.SystemFontFamilies.OrderBy(f => f.Source);
             fontSizeCB.ItemsSource = new List<double>() { 8, 9, 10, 11, 12, 14, 16, 28, 48, 72 };
         }
 
