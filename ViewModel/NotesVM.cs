@@ -28,7 +28,7 @@ namespace EvernoteClone.ViewModel {
             get { return selectedNote; }
             set { 
                 selectedNote = value;
-                SelectedNoteChanged(this, new EventArgs());
+                SelectedNoteChanged?.Invoke(this, new EventArgs());
             }
         }
 

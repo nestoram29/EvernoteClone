@@ -14,10 +14,7 @@
             <vm:NotesVM x:Key="vm"/>
         </ResourceDictionary>
     </Window.Resources>
-    <Window.DataContext>
-        <vm:NotesVM />
-    </Window.DataContext>
-    
+
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
